@@ -20,5 +20,8 @@ class Queue<E> {
     fun isEmpty(): Boolean {
         return elements.isEmpty()
     }
-    
+
+    fun size(): Int {
+        throw NotImplementedError("size() not implemented")
+    }
 }

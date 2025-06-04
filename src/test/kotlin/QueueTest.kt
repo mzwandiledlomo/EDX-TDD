@@ -26,4 +26,10 @@ class QueueTest {
         val queue = Queue<Int>()
         assertTrue(queue.isEmpty())
     }
+
+    @Test
+    fun `check size returns 0`() {
+        val queue = Queue<Int>()
+        assertEquals(0, queue.size())
+    }
 }
