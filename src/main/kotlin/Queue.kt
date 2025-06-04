@@ -12,6 +12,7 @@ class Queue<E> {
     }
 
     fun dequeue(): E {
-        throw NotImplementedError("dequeue() not implemented")
+        if (elements.isEmpty()) throw NoSuchElementException()
+        return elements.removeFirst()
     }
 }
