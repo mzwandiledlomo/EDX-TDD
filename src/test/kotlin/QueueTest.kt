@@ -13,12 +13,28 @@ class QueueTest {
     }
 
     @Test
+    fun `enqueue should add elements to the queue string`() {
+        val queue = Queue<String>()
+        queue.enqueue("Messi")
+        assertEquals("Messi", queue.peek())
+    }
+
+    @Test
     fun `dequeue should remove elements in FIFO order`() {
         val queue = Queue<Int>()
         queue.enqueue(1)
         queue.enqueue(2)
         assertEquals(1, queue.dequeue())
         assertEquals(2, queue.dequeue())
+    }
+
+    @Test
+    fun `dequeue should remove elements in FIFO order Strings`() {
+        val queue = Queue<String>()
+        queue.enqueue("Messi")
+        queue.enqueue("Mzwandile")
+        assertEquals("Messi", queue.dequeue())
+        assertEquals("Mzwandile", queue.dequeue())
     }
 
     @Test
