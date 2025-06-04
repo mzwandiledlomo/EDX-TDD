@@ -10,4 +10,8 @@ class Queue<E> {
         if (elements.isEmpty()) throw NoSuchElementException()
         return elements.peek()
     }
+
+    fun dequeue(): E {
+        throw NotImplementedError("dequeue() not implemented")
+    }
 }
