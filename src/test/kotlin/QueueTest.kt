@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
+import kotlin.test.assertTrue
 
 class QueueTest {
 
@@ -21,8 +22,8 @@ class QueueTest {
     }
 
     @Test
-    fun `check if the queue is empty, returns null`() {
+    fun `check if the queue is empty, returns true`() {
         val queue = Queue<Int>()
-        assertNull(queue.isEmpty())
+        assertTrue(queue.isEmpty())
     }
 }
