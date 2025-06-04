@@ -15,4 +15,9 @@ class Queue<E> {
         if (elements.isEmpty()) throw NoSuchElementException()
         return elements.removeFirst()
     }
+
+
+    fun isEmpty(): Boolean {
+        throw NotImplementedError("isEmpty() not implemented")
+    }
 }
