@@ -22,6 +22,6 @@ class Queue<E> {
     }
 
     fun size(): Int {
-        throw NotImplementedError("size() not implemented")
+        return elements.size
     }
 }
